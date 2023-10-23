@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.heroPage{
+    background-image: url("./img/bg.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    padding: 0 3em;
+    overflow: hidden;
+}
+
+.cloud{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 45%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.cloud img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    padding: 2em 1em;
+}
+
+.logo{
+    z-index: 100;
+    width: 80px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.searchContainer{
+    position: relative;
+    width: 150px;
+    margin-right: 2em;
+}
+
+.search{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: .5em;
+    padding-right: 1em;
+    font-size: .9rem;
+    border-radius: 15px;
+}
+
+.searchIcon{
+    position: absolute;
+    right: .5em;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 20px;
+    cursor: pointer;
+}
+
+.nav a{
+    margin-right: 2em;
+}
+
+
+.nav a li{
+    color: #fff;
+    position: relative;
+}
+
+.nav a li::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+}
+
+.nav a li:hover::before{
+    width: 100%;
+}
+
+.active::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+.heroDesc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.left{
+    color: #000000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.eventName {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    margin-bottom: 1em;
+}
+.eventName h1{
+    font-weight: 500;
+    font-size: 2.8rem;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    text-align: center;
+}
+
+.address{
+    font-size: .9rem;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    margin-top: 1em;
+}
+
+.sub-headline{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.headline{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 500;
+    margin-top: .8em;
+}
+
+.socialLinks{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.socialLinks li{
+    display: flex;
+}
+
+.socialLinks li i{
+    display: flex;
+    align-items: center;
+    margin-right: .5em;
+}
+
+
+
+
+
+
+
+
+
+
+
